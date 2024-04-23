@@ -1,0 +1,162 @@
+@import url(../font/SourceHanSans-Regular.ttc);
+body,html{
+    font-family: 'SourceHanSans-Regular';
+    scroll-behavior: smooth;
+    background:url('../images/bg.png') repeat #F4F2F1;
+    color: #030102;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: .8em;
+}
+.pink{
+    background: #DA5682;
+}
+.lightPurple{
+    background: #B675A0;
+}
+.blue{
+    background: #1D94E5;
+}
+.yellow{
+    background: linear-gradient(to Top, #FFF8DC, rgba(255,248,220,0));
+}
+.yellow .box, .box2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.yellow .box2{
+    position: relative;
+    flex-direction: row-reverse;
+}
+.yellow .box .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: .8em;
+    padding: 1em;
+}
+.yellow .box2 .tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: .8em;
+    padding: 1em;
+}
+.yellow .box:nth-child(1) .title{
+    color: #DA5682;
+}
+.yellow .box2 .title{
+    color: #B675A0;
+}
+.yellow .box:nth-child(3) .title{
+    color: #1D94E5;
+}
+.yellow .cover{
+    display: block;
+    max-height: 18em;
+    overflow: hidden;
+}
+.yellow img{
+    width: 120%;
+    object-fit: cover;
+}
+.info{
+    padding: 0 1em;
+    width: 70%;
+}
+.purple{
+    background: #F5F8FE;
+    background-image: linear-gradient(
+    90deg,
+    #f0ebff 0%,
+    #f0ebff 5%,
+    #e7dbf5 5%,
+    #e7dbf5 20%,
+    #f0ebff 20%,
+    #f0ebff 30%,
+    #e7dbf5 30%,
+    #e7dbf5 40%,
+    #f0ebff 40%,
+    #f0ebff 50%,
+    #e7dbf5 50%,
+    #e7dbf5 60%,
+    #f0ebff 60%,
+    #f0ebff 70%,
+    #e7dbf5 70%,
+    #e7dbf5 90%,
+    #f0ebff 90%,
+    #f0ebff 100%,
+    #e7dbf5 100%
+    );
+    font-size: .6em;
+}
+.purple .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to TOP, #F5F8FE 30%, #FFE500 70%);
+    border-image: linear-gradient(#B675A0, #FFE500) 30;
+    border-width: 2px;
+    border-style: solid;
+    height: 28em;
+    padding: 1em;
+}
+.yellow .cover{
+    display: block;
+    max-height: 20em;
+    overflow: hidden;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+}
+.footer a{
+    color: #000000;
+    font-size: .8em;
+    padding: 0 1.5em;
+    background: url(../images/arrow.png) left center no-repeat;
+}
+.copyright{
+    background: linear-gradient(to right, #DA5682, #1D94E5);
+    color: #fff;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 992px) { 
+    .purple, .copyright{
+        font-size: .6em;
+    }
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    } 
+    .footer a{
+        display: block;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .box, .box2{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        padding: 1em;
+        width: 100%;
+    }
+    .yellow .box2{
+        flex-direction: column;
+    }
+}
