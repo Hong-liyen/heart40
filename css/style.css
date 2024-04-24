@@ -2,7 +2,6 @@
 body,html{
     font-family: 'SourceHanSans-Regular';
     scroll-behavior: smooth;
-    background:url('../images/bg.png') repeat #F4F2F1;
     color: #030102;
 }
 img {
@@ -35,7 +34,18 @@ h5{
 }
 .sex{
     color: #FFE500;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s all;
+    z-index: 100;
+}
+
+.logo img{
+    width: 200px;
 }
 .banner{
     position: relative;
@@ -53,7 +63,7 @@ h5{
     right: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to Top, #F4F2F1, rgba(255,255,255,0));
+    background: linear-gradient(to Top, #fff, rgba(255,255,255,0));
 }
 .banner img{
     width: 100%;
@@ -80,7 +90,7 @@ h5{
     background: linear-gradient(to Top, #00C8C9, #1D94E5);
 }
 .yellow{
-    background: linear-gradient(to Top, #FFF8DC, rgba(255,248,220,0));
+    background: linear-gradient(to Top, #FFF8DC, rgba(255,248,220,.9), rgba(255,248,220,.8), rgba(255,255,255,1));
 }
 .yellow .main_title h4{
     color: #1D94E5;
@@ -225,17 +235,12 @@ h5{
     .banner{
         height: auto;
     }
+    .banner .sex{
+        font-size: 1.2em;
+    }
     .banner .circle{
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
         width: 6em;
         height: 6em;
-    }
-    .banner .female{
-        top: 30%;
-    }
-    .banner .male{
-        top: 60%;
     }
     .purple, .copyright{
         font-size: .8em;
@@ -254,18 +259,25 @@ h5{
     h5{
         font-size: .8em;
     }
+    .logo img{
+        width: 150px;
+    }
     .banner span{
         font-size: .6em;
     }
+    .banner .sex{
+        font-size: 1.2em;
+    }
     .banner .circle{
+        top: 40%;
         width: 4.5em;
         height: 4.5em;
     }
     .banner .female{
-        top: 30%;
+        left: 10%;
     }
     .banner .male{
-        top: 70%;
+        right: 10%;
     }
     .box, .box2{
         display: flex;
