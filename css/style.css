@@ -23,14 +23,20 @@ h5{
 .pink{
     background: #DA5682;
 }
-.text_pink{
-    color: #DA5682;
-}
 .lightPurple{
     background: #B675A0;
 }
 .blue{
     background: #1D94E5;
+}
+.text_pink{
+    color: #DA5682;
+}
+.text_lightPurple{
+    color: #B675A0;
+}
+.text_blue{
+    color: #1D94E5;
 }
 .sex{
     color: #FFE500;
@@ -74,7 +80,7 @@ h5{
     justify-content: center;
     position: absolute;
     content: "";
-    top: 30%;
+    top: 35%;
     width: 8em;
     height: 8em;
     text-align: center;
@@ -149,9 +155,7 @@ h5{
 .yellow .box:nth-child(1) .title{
     color: #DA5682;
 }
-.yellow .box2 .title{
-    color: #B675A0;
-}
+
 .yellow .box:nth-child(3) .title{
     color: #1D94E5;
 }
@@ -204,6 +208,9 @@ h5{
     height: 28em;
     padding: 1em;
 }
+.purple img{
+    width: 20em;
+}
 .yellow .cover{
     display: block;
     max-height: 20em;
@@ -216,7 +223,8 @@ h5{
 .footer a{
     color: #000000;
     font-size: .8em;
-    padding: 0 1.5em;
+    padding: 1.5em;
+    padding-left: 2em;
     background: url(../images/arrow.png) left center no-repeat;
 }
 .copyright{
